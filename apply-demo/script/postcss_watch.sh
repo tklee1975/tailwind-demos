@@ -1,0 +1,1 @@
+ npx postcss main.css -o ./dist/main.css -w
