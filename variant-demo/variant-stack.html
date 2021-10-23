@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="dist/main.css" rel="stylesheet">
+   
+</head>
+
+<body class="dark:bg-black">
+    <div id="app" class="container  p-5 text-blue-100">
+        <div class='text-5xl sm:text-4xl font-display'>Tailwind Variant Stacking </div>
+        <div class="my-3    ">&nbsp;</div>
+
+        <div class='text-xl sm:text-4xl font-display'>Working Stacks </div>
+        <div class="pb-5">
+            <button class="sm:dark:first:bg-red-400 bg-green-400  text-white p-4">Element 1</button>
+            <button class="sm:dark:first:bg-red bg-green-400 text-white p-4">Element 2</button>
+        </div>
+
+        <div class='text-xl sm:text-4xl font-display'>Invalid Stacks (Not Exits) </div>
+        <div class="pb-5">
+            <button class="sm:dark:hover:first:bg-red-400 bg-green-400  text-white p-4">Element 1</button>
+            <button class="sm:dark:hover:first:bg-red bg-green-400 text-white p-4">Element 2</button>
+        </div>
+
+
+        <div class='text-xl sm:text-4xl font-display'>Invalid Stacks (Wrong Order) </div>
+        <div class="pb-5">
+            <button class="first:sm:dark:bg-red-400 bg-green-400  text-white p-4">Element 1</button>
+            <button class="dark:sm:first:bg-red bg-green-400 text-white p-4">Element 2</button>
+        </div>
+
+    </div>
+</body>
+
+
+</html>

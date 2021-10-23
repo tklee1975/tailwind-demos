@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+BODY {
+    @apply bg-blue-300;
+}
+
+.btn1 {
+    background: red;
+    @apply bg-yellow-400 font-bold font-content p-3;
+}

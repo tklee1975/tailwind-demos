@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="dist/main.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body class="bg-green-100">
+    <div id="app" class="container p-5 ">
+        <div class='text-5xl sm:text-4xl font-display'>Element Position Variants</div>
+        <hr>
+        <div class='p-5'>
+            <h2 class='font-bold'>No style items:</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <div class='p-5'>
+            <h2 class='font-bold'>Old / Even Styles:</h2>
+            <ul>
+                <li v-for="i in 5" class="m-2 p-2  bg-yellow-200 even:bg-gray-50 odd:bg-blue-200 ">
+                    Item {{i}}
+                </li>
+            </ul>
+        </div>
+
+        <div class='p-5'>
+            <h2 class='font-bold'>First / Last Styles:</h2>
+            <ul>
+                <li v-for="i in 5" class="m-2 p-2  bg-yellow-200 first:bg-gray-50 last:bg-blue-200 ">
+                    Item {{i}}
+                </li>
+            </ul>
+        </div>
+
+        <div class='p-5'>
+            <h2 class='font-bold'>Old / Even with Hover:</h2>
+            <ul>
+                <li v-for="i in 5" class="m-2 p-2 hover:bg-purple-700 bg-yellow-200 even:bg-gray-50 odd:bg-blue-200 ">
+                    Item {{i}}
+                </li>
+            </ul>
+        </div>
+
+        <div class='p-5'>
+            <h2 class='font-bold'>Old / Even with Hover & Responsive</h2>
+            <ul>
+                <li v-for="i in 5" class="m-2 p-2 sm:hover:bg-purple-700 bg-yellow-200 even:bg-gray-50 odd:bg-blue-200 ">
+                    Item {{i}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+    const isDev = false;
+
+    const VueApp = {
+        data() {
+            return {
+
+            }
+        },
+        methods: {
+        },
+    }
+
+    Vue.createApp(VueApp).mount('#app')
+</script>
+
+</html>
