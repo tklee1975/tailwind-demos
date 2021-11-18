@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="flex justify-center flex-col align-middle">
+        <!-- Hero Image -->
+        <div>
+            <img class="w-2/3 m-auto sm:max-w-sm" src="./images/hero-image.png">
+        </div>
+
+        <!-- Search Box -->
+        <div>
+            <div class="flex justify-center ">
+                <label htmlFor="search" class="w-full mx-4 sm:w-2/3">                    
+                    <input class=" w-full rounded-full px-4 pl-9" 
+                        id="search" type="text"
+                        placeholder="Input Your Keywords." />
+                </label>
+            </div>
+        </div>
+
+        <!-- Search Button -->
+        <div class="flex justify-center mt-2 mx-5">
+            <button class="rounded-full bg-secondary  py-1 w-64 hover:bg-yellow-400">Start Search</button>
+        </div>
+
+        <!-- Links -->
+        <div class="mt-7">
+            <div class="w-full flex gap-1 flex-col items-center justify-center sm:flex-row sm:gap-5">
+                <a href="www.google.com">Google</a>
+                <a  href="https://www.bing.com/">Bing</a>
+                <a href="https://duckduckgo.com/">DuckDuckGo</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
